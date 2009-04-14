@@ -1,7 +1,14 @@
 start:
+PRINT "[BeFore] Press any key to show menu..."
+start = TIMER
+DO
+IF INKEY$ <> "" THEN GOTO menu
+LOOP UNTIL TIMER >= start + 3
+END
+menu:
 CLS
 COLOR , 1
-PRINT "ShiftOut - BeFore 0.2" + SPACE$(80 - 21)
+PRINT "ShiftOut - BeFore 0.3" + SPACE$(80 - 21)
 COLOR , 0
 PRINT
 PRINT "This program is freely available from http://www.shiftout.com/projects/BeFore"
@@ -19,7 +26,7 @@ END IF
 IF i$ = "2" THEN
 DO
 SHELL
-GOTO start
+GOTO menu
 LOOP
 END IF
 IF i$ = "3" THEN
