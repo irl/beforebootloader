@@ -1,0 +1,1 @@
+BeFore is a boot loader designed for use with BeOS 5 Personal Edition. It runs at the start of the autoexec.bat file to give you the opportunity to boot into BeOS instead of booting up Windows first and then rebooting into BeOS.
